@@ -129,6 +129,7 @@ main li {
 
 #important p {
     font-size: 0.95rem;
+    font-weight: 600;
     color: #7f8c8d;
     margin: 0;
     line-height: 1.5;
@@ -137,7 +138,7 @@ main li {
 /* --- Language Selector Bar --- */
 .lang-bar {
     display: flex;
-    justify-content: flex-end; /* Pushes the buttons to the top-right corner */
+    justify-content: center; /* Pushes the buttons to the top-right corner */
     max-width: 650px;
     margin: 0 auto 20px auto;
     gap: 10px;
