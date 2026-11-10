@@ -80,7 +80,7 @@ main {
 }
 
 /* --- Service Inclusion List --- */
-main ul {
+.listings ul {
     background: white;
     padding: 30px 30px 30px 55px;
     border-radius: 12px;
@@ -99,7 +99,7 @@ main li {
     transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
-main li::before {
+.listings li::before {
     content: "✓";
     position: absolute;
     left: -28px;
@@ -107,7 +107,7 @@ main li::before {
     font-weight: 900;
 }
 
-main li:hover {
+.listings li:hover {
     transform: translateX(4px);
     color: #0b6655;
 }
@@ -123,7 +123,6 @@ main li:last-child {
     margin: 0;
     padding: 25px;
     border-radius: 12px;
-    text-align: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     border-left: 6px solid #0b6655; /* Distinct color border on the side */
 }
@@ -140,7 +139,6 @@ main li:last-child {
 #normal p.lang-es,
 #emergency p.lang-en,
 #emergency p.lang-es {
-    white-space: nowrap;
     font-size: 1.15rem !important; /* Balanced globally to allow long text strings to sit on one line */
     font-weight: 700;
     margin: 0 0 10px 0;
@@ -153,6 +151,7 @@ main li:last-child {
     color: #0b6655 !important;
     margin: 0;
     display: block !important;
+    text-align: center;
 }
 
 .price-display span {
@@ -230,7 +229,6 @@ p.status-green,
     background-color: white;
     padding: 30px;
     border-radius: 12px;
-    text-align: center;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
