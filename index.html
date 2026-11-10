@@ -4,52 +4,111 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="index, follow">
+    <link rel="icon" type="image/x-icon" href="logo.jpeg">
     <title>Seaway Smiles Family Dentistry</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
         <div id="logo">
             <img src="logo.jpeg" alt="Seaway Smiles Family Dentistry Logo">
         </div>
+
+
+            <br>
+            <div class="nav">
+            <footer class="site-footer">
+            <nav class="footer-nav">
+            <a href="about.html"><span class="lang-en">About us</span><span class="lang-es">Sobre nosotros</span></a>
+            <a href="team.html"><span class="lang-en">Our Team</span><span class="lang-es">Nuestro equipo</span></a>
+            <a href="treatments.html"><span class="lang-en">Treatments</span><span class="lang-es">Tratamientos</span></a>
+            <a href="faq.html"><span class="lang-en">FAQ</span><span class="lang-es">Preguntas frecuentes</span></a>
+            </nav>
+            </footer>
+            </div>
+            <br>
+
+
         <div id="box">
-        <p class="tagline">Now open in West Palm Beach</p>
-        <p class="tagline">Welcoming new patients</p>
+            <p class="tagline lang-en">Now open in West Palm Beach</p>
+            <p class="tagline lang-es">Ahora abierto en West Palm Beach</p>
+            <p class="tagline lang-en">Welcoming new patients</p>
+            <p class="tagline lang-es">Aceptando nuevos pacientes</p>
         </div>
         <br>
         <nav class="lang-bar">
-        <a href="#en" class="lang-btn active">English 🇬🇧</a>
-        <a href="#es" class="lang-btn">Castellano 🇪🇸</a>
+            <a href="#en" class="lang-btn active">English 🇬🇧</a>
+            <a href="#es" class="lang-btn">Castellano 🇪🇸</a>
         </nav>
-        <h1>Specials</h1>
+    </footer>
+        <h1>
+            <span class="lang-en">Specials</span>
+            <span class="lang-es">Ofertas Especiales</span>
+        </h1>
     </header>
 
-<main>
+    <main>
+        
+        <ul>
+            <li>
+                <span class="lang-en">Comprehensive Dental Exam</span>
+                <span class="lang-es">Examen Dental Completo</span>
+            </li>
+            <li>
+                <span class="lang-en">Professional Teeth Cleaning</span>
+                <span class="lang-es">Limpieza Dental Profesional</span>
+            </li>
+            <li>
+                <span class="lang-en">X-rays</span>
+                <span class="lang-es">Radiografías</span>
+            </li>
+        </ul>
+        
+        <div class="offers-row">
+            <div id="normal">
+                <p class="lang-en">Exam + Cleanse + X-rays</p>
+                <p class="lang-es">Examen + Limpieza + Radiografías</p>
+                <p class="price-display">
+                    <span class="lang-en">$99</span>
+                    <span class="lang-es">99 $</span>
+                </p>
+            </div>
 
+            <div id="emergency">
+                <p class="lang-en">Emergency Visit Special</p>
+                <p class="lang-es">Visita de Emergencia</p>
+                <p class="price-display">
+                    <span class="lang-en">$50</span>
+                    <span class="lang-es">50$</span>
+                </p>
+                <!-- Explicit class targets to fix the green text display -->
+                <p class="status-green lang-en">Can be seen straight away</p>
+                <p class="status-green lang-es">Atención inmediata</p>
+            </div>
+        </div>
 
-<ul>
-<li>Comprehensive Dental Exam</li>
-<li>Professional Teeth Cleaning</li>
-<li>X-rays</li>
-</ul>
+        <div id="important">
+            <p class="lang-en">NOTE: Cleaning is not applicable to patients who are determined to have any form of periodontal disease. Those patients will be advised of the appropriate treatment. New patients only. Offer expires [DATE]. Cannot be combined with other offers.</p>
+            <p class="lang-es">NOTA: La limpieza no aplica a pacientes que presenten cualquier tipo de enfermedad periodontal. Dichos pacientes serán informados sobre el tratamiento adecuado. Solo para nuevos pacientes. La oferta vence el [DATE]. No acumulable con otras ofertas.</p>
+        </div>
 
-<div id="normal">
-<p>Exam + Cleansing + X-rays</p>
-<p>$99</p>
-</div>
-<div id="emergency">
-<p>Emergency Visit Special</p>
-<p>$50</p>
-<p>Can be seen straight away</p>
-</div>
+        <div id="visit">
+            <h2>
+                <span class="lang-en">Visit Us</span>
+                <span class="lang-es">Visítenos</span>
+            </h2>
+            <p class="visit-text lang-en">We would like for you to leave our office with an unforgettable experience, which is why our welcoming staff will do everything to make you feel right at home.</p>
+            <p class="visit-text lang-es">Deseamos ofrecerle una experiencia inolvidable en nuestra clínica; por ello, nuestro atento personal hará todo lo posible para que se sienta como en casa.</p>
+            
+            <div class="small-map-wrapper">
 
-<div id="important">
-<p>NOTE: *Cleaning is not applicable to patients who are determined to have any form of periodontal
-disease. Those patients will be advised of the appropriate treatment. New patients only. Offer
-expires [DATE]. Cannot be combined with other offers.</p>
-</div>
+                <iframe width="600" height="450" style="border:0;" src="https://maps.google.com/maps?q=5100%20S%20Dixie%20Hwy%2C%20West%20Palm%20Beach%2C%20FL%2033405&t=m&z=14&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+<a class="map-link" href="https://www.google.com/maps/dir//5100+S+Dixie+Hwy,+West+Palm+Beach,+FL+33405/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x88d8d7a7133e5755:0x369a478368679f48?sa=X&ved=1t:707&ictx=111">5100 S Dixie Highway, West Palm Beach, FL 33405</a>        </div>
+    </main>
 
-</main>
 
 </body>
 </html>
