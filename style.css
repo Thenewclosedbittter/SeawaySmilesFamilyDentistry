@@ -1,445 +1,420 @@
 /* --- Base Styles & Typography --- */
-body {
-    background-color: aliceblue;
-    margin: 0; 
-    padding: 30px 20px; 
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    font-size: 1.2rem;       /* Clean, slightly larger base font size */
-    line-height: 1.6;
-    color: #2c3e50;
-} 
-
+ body {
+     background-color: aliceblue;
+     margin: 0;
+     padding: 30px 20px;
+     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+     font-size: 1.2rem;
+    /* Clean, slightly larger base font size */
+     line-height: 1.6;
+     color: #2c3e50;
+}
 /* Forces all sub-elements to use font settings from body */
-body *, body *::before, body *::after {
-    font-family: inherit;
+ body *, body *::before, body *::after {
+     font-family: inherit;
 }
-
-header {
-    text-align: center;
-    margin-bottom: 40px;
+ header {
+     text-align: center;
+     margin-bottom: 40px;
 }
-
 /* --- Logo Proportions (Clean & Restored) --- */
-div#logo {
-    margin: 0 auto 20px auto;  
-    width: 100%;
-    max-width: 420px; /* Controls the size of the logo without warping it */
+ div#logo {
+     margin: 0 auto 20px auto;
+     width: 100%;
+     max-width: 420px;
+    /* Controls the size of the logo without warping it */
 }
-
-div#logo img {
-    width: 100%;
-    height: auto;     /* Restores the logo's natural, un-squished dimensions */
-    display: block; 
-    mix-blend-mode: multiply;
+ div#logo img {
+     width: 100%;
+     height: auto;
+    /* Restores the logo's natural, un-squished dimensions */
+     display: block;
+     mix-blend-mode: multiply;
 }
-
 /* --- Header Tagline Box --- */
 /* --- Header Tagline Box --- */
-div#box {
-    margin: 0 auto;
-    background-color: #e6f7f4; /* Soft aquamarine tint matching your brand */
-    width: 100%; /* Stretches the block across the layout container */
-    max-width: 800px; /* MATCHES your navigation bar and text card widths perfectly */
-    padding: 15px 35px;
-    border-radius: 12px; /* Changed from 30px pill to 12px rounded corners to perfectly match your nav box style */
-    border: 1px solid #b2ebd9;
-    text-align: center;
-    box-sizing: border-box; /* Prevents padding from causing width overflow errors */
+ div#box {
+     margin: 0 auto;
+     background-color: #e6f7f4;
+    /* Soft aquamarine tint matching your brand */
+     width: 100%;
+    /* Stretches the block across the layout container */
+     max-width: 800px;
+    /* MATCHES your navigation bar and text card widths perfectly */
+     padding: 15px 35px;
+     border-radius: 12px;
+    /* Changed from 30px pill to 12px rounded corners to perfectly match your nav box style */
+     border: 1px solid #b2ebd9;
+     text-align: center;
+     box-sizing: border-box;
+    /* Prevents padding from causing width overflow errors */
 }
-
-
-.tagline {
-    font-size: 1.25rem;
-    color: #0b6655;           /* Clean dark teal from logo palette */
-    font-weight: 600;
-    margin: 5px 0;
+ .tagline {
+     font-size: 1.25rem;
+     color: #0b6655;
+    /* Clean dark teal from logo palette */
+     font-weight: 600;
+     margin: 5px 0;
 }
-
-h1, h2 {
-    font-size: 2.2rem;
-    color: #0b6655;
-    margin-top: 30px;
-    text-align: center; 
+ h1, h2 {
+     font-size: 2.2rem;
+     color: #0b6655;
+     text-align: center;
 }
-
 /* --- Main Layout Container --- */
-main {
-    margin: 0 auto;       
-    width: 100%;
-    max-width: 800px;     /* Keeps cards beautifully centered and readable */
-    display: flex;
-    flex-direction: column;
-    gap: 25px;            /* Automatically pushes separate boxes apart */
+ main {
+     margin: 0 auto;
+     width: 100%;
+     max-width: 800px;
+    /* Keeps cards beautifully centered and readable */
+     display: flex;
+     flex-direction: column;
+     gap: 25px;
+    /* Automatically pushes separate boxes apart */
 }
-
-.offers-row {
-    display: flex;
-    flex-direction: row;
-    gap: 25px; 
-    width: 100%;
+ .offers-row {
+     display: flex;
+     flex-direction: row;
+     gap: 25px;
+     width: 100%;
 }
-
 /* --- Service Inclusion List --- */
-.listings ul {
-    background: white;
-    padding: 30px 30px 30px 55px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    margin: 0 0 10px 0;
-    list-style-type: none;
-    border-left: 6px solid #0b6655;
+ .listings ul {
+     background: white;
+     padding: 30px 30px 30px 55px;
+     border-radius: 12px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+     margin: 0 0 10px 0;
+     list-style-type: none;
+     border-left: 6px solid #0b6655;
 }
-
-main li {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 12px;
-    color: #2c3e50;
-    position: relative;
-    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+ main li {
+     font-size: 1.25rem;
+     font-weight: 600;
+     margin-bottom: 12px;
+     color: #2c3e50;
+     position: relative;
+     transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
 }
-
-.listings li::before {
-    content: "✓";
-    position: absolute;
-    left: -28px;
-    color: #0b6655;
-    font-weight: 900;
+ .listings li::before {
+     content: "✓";
+     position: absolute;
+     left: -28px;
+     color: #0b6655;
+     font-weight: 900;
 }
-
-.listings li:hover {
-    transform: translateX(4px);
-    color: #0b6655;
+ .listings li:hover {
+     transform: translateX(4px);
+     color: #0b6655;
 }
-
-main li:last-child {
-    margin-bottom: 0;
+ main li:last-child {
+     margin-bottom: 0;
 }
-
 /* --- Separate Offer Cards --- */
-#normal, #emergency {
-    background-color: white;
-    flex: 1;
-    margin: 0;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    border-left: 6px solid #0b6655; /* Distinct color border on the side */
+ .normal, #emergency {
+     background-color: white;
+     flex: 1;
+     margin: 0;
+     padding: 25px;
+     border-radius: 12px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+     border-left: 6px solid #0b6655;
+    /* Distinct color border on the side */
 }
-
 /* Make the emergency card pop slightly more */
-#emergency {
-    border-left-color: #e67e22; /* Warning/Urgent orange border accent */
+ #emergency {
+     border-left-color: #e67e22;
+    /* Warning/Urgent orange border accent */
 }
-
 /* Formatting text inside the boxes: Elegant compact size default across both languages */
-#normal p:first-child, 
-#emergency p:first-child,
-#normal p.lang-en,
-#normal p.lang-es,
-#emergency p.lang-en,
-#emergency p.lang-es {
-    font-size: 1.15rem !important; /* Balanced globally to allow long text strings to sit on one line */
-    font-weight: 700;
-    margin: 0 0 10px 0;
+ .normal p:first-child, #emergency p:first-child, .normal p.lang-en, .normal p.lang-es, #emergency p.lang-en, #emergency p.lang-es {
+     font-size: 1.15rem !important;
+    /* Balanced globally to allow long text strings to sit on one line */
+     font-weight: 700;
+     margin: 0 0 10px 0;
 }
-
 /* --- Fixed Price Text Layout --- */
-.price-display {
-    font-size: 2rem !important;
-    font-weight: 800 !important;
-    color: #0b6655 !important;
-    margin: 0;
-    display: block !important;
-    text-align: center;
+ .price-display {
+     font-size: 2rem !important;
+     font-weight: 800 !important;
+     color: #0b6655 !important;
+     margin: 0;
+     display: block !important;
+     text-align: center;
 }
-
-.price-display span {
-    font-size: 2rem !important;
-    font-weight: 800 !important;
-    color: inherit !important;
+ .price-display span {
+     font-size: 2rem !important;
+     font-weight: 800 !important;
+     color: inherit !important;
 }
-
-#emergency .price-display {
-    color: #e67e22 !important;
+ #emergency .price-display {
+     color: #e67e22 !important;
 }
-
 /* --- Explicit Status Text Alignment Fix --- */
-.status-green,
-p.status-green,
-#emergency p.status-green {
-    font-size: 1.1rem !important;
-    font-weight: 600 !important;
-    color: #27ae60 !important; /* Locks in your positive green text color */
-    margin: 10px auto 0 auto !important; /* Automatic left/right margins guarantee center locking */
-    text-align: center !important; /* Explicitly forces internal text characters to center alignment */
-    display: block !important; /* Switched from inline-block to block to allow full container centering */
-    width: 100%; /* Spreads the bounding box to prevent any sideways shifting */
+ .status-green, p.status-green, #emergency p.status-green {
+     font-size: 1.1rem !important;
+     font-weight: 600 !important;
+     color: #27ae60 !important;
+    /* Locks in your positive green text color */
+     margin: 10px auto 0 auto !important;
+    /* Automatic left/right margins guarantee center locking */
+     text-align: center !important;
+    /* Explicitly forces internal text characters to center alignment */
+     display: block !important;
+    /* Switched from inline-block to block to allow full container centering */
+     width: 100%;
+    /* Spreads the bounding box to prevent any sideways shifting */
 }
-
-#important {
-    background-color: #fff7ed;
-    padding: 20px;
-    border-radius: 8px;
-    border-left: 4px solid #f97316;
+ #important {
+     background-color: #fff7ed;
+     padding: 20px;
+     border-radius: 8px;
+     border-left: 4px solid #f97316;
 }
-
-#important p {
-    font-size: 0.95rem;
-    font-weight: 500;
-    color: #7c2d12;
-    margin: 0;
-    line-height: 1.6;
+ #important p {
+     font-size: 0.95rem;
+     font-weight: 500;
+     color: #7c2d12;
+     margin: 0;
+     line-height: 1.6;
 }
-
 /* --- Language Switcher Bar --- */
-.lang-bar {
-    display: flex !important; /* Forces the bar to stay visible in both language states */
-    justify-content: center; 
-    max-width: 800px;
-    margin: 0 auto 20px auto;
-    gap: 10px;
+ .lang-bar {
+     display: flex !important;
+    /* Forces the bar to stay visible in both language states */
+     justify-content: center;
+     max-width: 800px;
+     margin: 0 auto 20px auto;
+     gap: 10px;
 }
-
-.lang-btn {
-    display: inline-block !important; /* Overrides accidental inheritance blocks */
-    font-size: 0.95rem;
-    font-weight: 600;
-    text-decoration: none !important; /* Keeps buttons clean without footer dashed underscores */
-    border-bottom: none !important; /* Removes accidental border line bleed from footer styling */
-    color: #7f8c8d !important;
-    padding: 6px 14px;
-    border-radius: 20px;
-    background-color: #e2e8f0;
-    transition: all 0.2s ease;
+ .lang-btn {
+     display: inline-block !important;
+    /* Overrides accidental inheritance blocks */
+     font-size: 0.95rem;
+     font-weight: 600;
+     text-decoration: none !important;
+    /* Keeps buttons clean without footer dashed underscores */
+     border-bottom: none !important;
+    /* Removes accidental border line bleed from footer styling */
+     color: #7f8c8d !important;
+     padding: 6px 14px;
+     border-radius: 20px;
+     background-color: #e2e8f0;
+     transition: all 0.2s ease;
 }
-
-.lang-btn:hover {
-    background-color: #cbd5e1;
-    color: #334155 !important;
+ .lang-btn:hover {
+     background-color: #cbd5e1;
+     color: #334155 !important;
 }
-
-.lang-btn.active {
-    background-color: #0b6655; /* Matches your dark teal logo color */
-    color: white !important;
+ .lang-btn.active {
+     background-color: #0b6655;
+    /* Matches your dark teal logo color */
+     color: white !important;
 }
-
 /* --- Visit Us Card & Map Section --- */
-#visit {
-    background-color: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+ #visit {
+     background-color: white;
+     border-radius: 12px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
-
-.small-map-wrapper {
-    max-width: 500px;
-    margin: 20px auto;
-    border-radius: 8px;
-    overflow: hidden;
-    border: 1px solid #e2e8f0;
+ #intro, #visit{
+     padding: 30px;
 }
-
-.small-map-wrapper iframe {
-    display: block;
-    width: 100%;
-    height: 250px;
+ .small-map-wrapper {
+     max-width: 500px;
+     text-align: center;
+     margin: 20px auto;
+     border-radius: 8px;
+     overflow: hidden;
+     border: 1px solid #e2e8f0;
 }
-
+ .small-map-wrapper iframe {
+     display: block;
+     width: 100%;
+     width: 600px;
+     height: 450px;
+     border: 0;
+}
 /* --- Universal Hyperlink Component Architecture --- */
-footer {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    margin-top: 40px;
+ footer {
+     margin-left: auto;
+     margin-right: auto;
+     text-align: center;
+     margin-top: 40px;
 }
-
-footer nav a {
-    display: inline-block;
-    margin: 0 15px;
-    font-weight: 600;
-    text-decoration: underline;
+ footer nav a {
+     display: inline-block;
+     margin: 0 15px;
+     font-weight: 600;
+     text-decoration: underline;
 }
-
-.map-link {
-    display: inline-block;
-    margin-top: 10px;
-    font-weight: 600;
-    text-decoration: underline;
+ .map-link {
+     display: inline-block;
+     margin-top: 10px;
+     font-weight: 600;
+     text-decoration: underline;
 }
-
-a:link {
-    color: blue; 
+ a:link {
+     color: blue;
 }
-
 /* Turns purple whenever user clicks */
-a:visited,
-.map-link:visited {
-    color: purple !important;
+ a:visited, .map-link:visited {
+     color: purple !important;
 }
-
 /* --- Dynamic Multi-Language Visibility Matrix --- */
-.lang-es {
-    display: none !important;
+ .lang-es {
+     display: none !important;
 }
-
 /* Added 'not(iframe)' so the browser never accidentally hides your Google Map */
-body.show-es :not(iframe).lang-en {
-    display: none !important;
+ body.show-es :not(iframe).lang-en {
+     display: none !important;
 }
-
-body.show-es .lang-es {
-    display: block !important;
+ body.show-es .lang-es {
+     display: block !important;
 }
-
 /* Inline text block rules: Keeps spans inline so they never duplicate or pop out */
-span.lang-es, strong.lang-es {
-    display: none !important;
+ span.lang-es, strong.lang-es {
+     display: none !important;
 }
-
-body.show-es span.lang-en, body.show-es strong.lang-en {
-    display: none !important;
+ body.show-es span.lang-en, body.show-es strong.lang-en {
+     display: none !important;
 }
-
 /* Fixed Inline Rule: Safely locks content parameters on language swap */
-body.show-es span.lang-es, body.show-es strong.lang-es {
-    display: inline !important; 
+ body.show-es span.lang-es, body.show-es strong.lang-es {
+     display: inline !important;
 }
-
 /* Price specific conditional visibility states */
-body.show-es .price-display span.lang-en,
-body:not(.show-es) .price-display span.lang-es {
-    display: none !important;
+ body.show-es .price-display span.lang-en, body:not(.show-es) .price-display span.lang-es {
+     display: none !important;
 }
-
-body.show-es .price-display span.lang-es,
-body:not(.show-es) .price-display span.lang-en {
-    display: inline !important;
+ body.show-es .price-display span.lang-es, body:not(.show-es) .price-display span.lang-en {
+     display: inline !important;
 }
-
 /* Updated language toggle rules using block/none to maintain perfect center alignment */
-body.show-es .status-green.lang-en,
-body:not(.show-es) .status-green.lang-es {
-    display: none !important;
+ body.show-es .status-green.lang-en, body:not(.show-es) .status-green.lang-es {
+     display: none !important;
 }
-
-body.show-es .status-green.lang-es,
-body:not(.show-es) .status-green.lang-en {
-    display: block !important; /* Forces centered row block metrics inside the parent card container */
+ body.show-es .status-green.lang-es, body:not(.show-es) .status-green.lang-en {
+     display: block !important;
+    /* Forces centered row block metrics inside the parent card container */
 }
-
 /* --- Dedicated FAQ Framework --- */
-.faq-card {
-    background-color: white;
-    width: 100%;
-    box-sizing: border-box;
-    padding: 30px;
-    border-radius: 12px;
-    text-align: left;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    border-left: 6px solid #0b6655;
-    margin-bottom: 20px;
-    transition: transform 0.2s ease-in-out;
+ .faq-card {
+     background-color: white;
+     width: 100%;
+     box-sizing: border-box;
+     padding: 30px;
+     border-radius: 12px;
+     text-align: left;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+     border-left: 6px solid #0b6655;
+     margin-bottom: 20px;
+     transition: transform 0.2s ease-in-out;
 }
-
-.faq-card.emergency {
-    border-left-color: #e67e22;
+ .faq-card.emergency {
+     border-left-color: #e67e22;
 }
-
-.faq-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(11, 102, 85, 0.08);
+ .faq-card:hover {
+     transform: translateY(-2px);
+     box-shadow: 0 6px 16px rgba(11, 102, 85, 0.08);
 }
-
-.faq-card.emergency:hover {
-    box-shadow: 0 6px 16px rgba(230, 126, 34, 0.08);
+ .faq-card.emergency:hover {
+     box-shadow: 0 6px 16px rgba(230, 126, 34, 0.08);
 }
-
-.faq-question {
-    font-size: 1.35rem;
-    font-weight: 700;
-    margin: 0 0 10px 0;
-    color: #0b6655;
+ .faq-question {
+     font-size: 1.35rem;
+     font-weight: 700;
+     margin: 0 0 10px 0;
+     color: #0b6655;
 }
-
-.faq-card.emergency .faq-question {
-    color: #e67e22;
+ .faq-card.emergency .faq-question {
+     color: #e67e22;
 }
-
-.faq-answer {
-    font-size: 1.15rem;
-    color: #34495e;
-    margin: 0;
-    font-weight: 500;
-    line-height: 1.6;
+ .faq-answer {
+     font-size: 1.15rem;
+     color: #34495e;
+     margin: 0;
+     font-weight: 500;
+     line-height: 1.6;
 }
-
 /* --- Global Responsive Screen Overrides --- */
-@media (max-width: 768px) {
-    .offers-row {
-        flex-direction: column;
+ @media (max-width: 768px) {
+     .offers-row {
+         flex-direction: column;
     }
 }
-
-.faq-question,
-#normal p:first-child,
-#emergency p:first-child {
-    text-align: center !important; /* Locks all FAQ titles dead-center in both English and Spanish */
+ .faq-question, .normal p:first-child, #emergency p:first-child {
+     text-align: center !important;
+    /* Locks all FAQ titles dead-center in both English and Spanish */
 }
-
 /* --- Professional Navigation Header Box --- */
-div.nav {
-    width: 100%;
-    max-width: 800px;
-    margin: 15px auto 30px auto; /* Centers the whole container under the flags */
-    padding: 10px 20px;
-    background-color: #f8fafc; /* Ultra-soft slate tint provides clear contrast */
-    border: 1px solid #e2e8f0;  /* Subtle premium boundary frame */
-    border-radius: 12px;        /* Clean, rounded corner metrics matching your cards */
-    box-sizing: border-box;
+ div.nav {
+     width: 100%;
+     max-width: 800px;
+     margin: 15px auto 30px auto;
+    /* Centers the whole container under the flags */
+     padding: 10px 20px;
+     background-color: #f8fafc;
+    /* Ultra-soft slate tint provides clear contrast */
+     border: 1px solid #e2e8f0;
+    /* Subtle premium boundary frame */
+     border-radius: 12px;
+    /* Clean, rounded corner metrics matching your cards */
+     box-sizing: border-box;
 }
-
 /* Strip native margins from your inner structural footer tags */
-div.nav footer.site-footer,
-div.nav nav.footer-nav {
-    margin: 0 !important;
-    padding: 0 !important;
-    border-top: none !important;
-    text-align: center;
-    width: 100%;
+ div.nav footer.site-footer, div.nav nav.footer-nav {
+     margin: 0 !important;
+     padding: 0 !important;
+     border-top: none !important;
+     text-align: center;
+     width: 100%;
 }
-
 /* --- Premium Hyperlink Architecture --- */
-div.nav nav.footer-nav a {
-    display: inline-block !important;
-    margin: 8px 15px !important;
-    font-weight: 600 !important;
-    text-decoration: none !important; /* Strips ancient flat underlines */
-    border-bottom: 2px dashed #0b6655 !important; /* Premium dashed brand underline */
-    padding-bottom: 2px !important;
-    letter-spacing: 0.3px;
-    transition: all 0.2s ease-in-out !important;
+ div.nav nav.footer-nav a {
+     display: inline-block !important;
+     margin: 8px 15px !important;
+     font-weight: 600 !important;
+     text-decoration: none !important;
+    /* Strips ancient flat underlines */
+     border-bottom: 2px dashed #0b6655 !important;
+    /* Premium dashed brand underline */
+     padding-bottom: 2px !important;
+     letter-spacing: 0.3px;
+     transition: all 0.2s ease-in-out !important;
 }
-
 /* Link Color Controls */
-div.nav nav.footer-nav a:link,
-div.nav nav.footer-nav a:active {
-    color: #0b6655 !important;
+ div.nav nav.footer-nav a:link, div.nav nav.footer-nav a:active {
+     color: #0b6655 !important;
 }
-
 /* Hover state deepens contrast smoothly */
-div.nav nav.footer-nav a:hover {
-    color: #084c3f !important;
-    opacity: 0.85;
+ div.nav nav.footer-nav a:hover {
+     color: #084c3f !important;
+     opacity: 0.85;
 }
-
 /* Visited Tracking: Premium Royal Plum applied after selection */
-div.nav nav.footer-nav a:visited {
-    color: #6b21a8 !important;
-    border-bottom-color: #6b21a8 !important;
+ div.nav nav.footer-nav a:visited {
+     color: #6b21a8 !important;
+     border-bottom-color: #6b21a8 !important;
 }
 /* --- Global Page Heading Spacing Fix --- */
-h1 {
-    margin-top: 45px !important; /* Pushes your page title down slightly for beautiful breathing room */
+ .treatments{
+     font-size: 1.1rem;
+     font-weight: 600;
+     line-height: 1.7;
+     color: #34495e;
+}
+ #intro{
+     background-color: white;
+     border-radius: 12px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+     border-left: 6px;
+     margin: 0;
+     font-size: 1.2rem;
+     color: #2c3e50;
+     font-weight: 500;
+}
+ .normal{
+     text-color: #0b6655;
 }
 
